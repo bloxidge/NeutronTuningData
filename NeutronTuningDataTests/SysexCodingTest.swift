@@ -35,7 +35,7 @@ class SysexCodingTest: XCTestCase {
     
     func testSysexEncodingAndDecoding() {
         var randomBytes = [UInt8](repeating: 0, count: 169)
-        randomBytes = randomBytes.map {
+        randomBytes = randomBytes.map { _ in
             return UInt8(arc4random() >> 24)
         }
         

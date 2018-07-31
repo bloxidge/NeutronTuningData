@@ -60,14 +60,26 @@ class MessageHandler: MessageHandlerDelegate {
     
     func handleMessage(_ message: Message) {
         // Only care about SysEx messages
-        if message.type == .system(.exclusive) {
+        if case .system(.exclusive) = message.type {
             // See if message is a Neutron message
             guard let neutronMessage = NeutronMessage(message) else { return }
-            // Only care about tuning data responses
-            if neutronMessage.sysexCommand == .tuningResponse {
+            
+            switch neutronMessage.sysexCommand {
+            case .globalSettingResponse:
+                parseGlobalSettingsResponse(neutronMessage)
+            case .tuningResponse:
                 parseTuningResponse(neutronMessage)
+            default:
+                break
             }
         }
+    }
+    
+    func parseGlobalSettingsResponse(_ message: NeutronMessage) {
+        let globalSettingsStart = NeutronMessage.header.count + 3
+        let globalSettings = GlobalSettings(packed: Array(message.data[globalSettingsStart..<message.data.count - 1]).sysexToData)
+        print()
+        print(deepDescription(globalSettings.parameters))
     }
     
     func parseTuningResponse(_ message: NeutronMessage) {

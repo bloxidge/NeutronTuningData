@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34552B7210B5607009CF6EB /* SysexCodingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368796A20F79C35005A723E /* SysexCodingTest.swift */; };
+		D34552B9210B5677009CF6EB /* GlobalSettingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34552B8210B5677009CF6EB /* GlobalSettingsTest.swift */; };
+		D34552BA210B56AC009CF6EB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795820F79092005A723E /* Message.swift */; };
+		D34552BB210B56B0009CF6EB /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795A20F79126005A723E /* MessageType.swift */; };
+		D34552BC210B56B7009CF6EB /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA678A210B31760033D76D /* GlobalSettings.swift */; };
+		D34552BD210B56BE009CF6EB /* NeutronMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795620F78E7C005A723E /* NeutronMessage.swift */; };
+		D34552BE210B56D3009CF6EB /* SysexParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795C20F7955B005A723E /* SysexParser.swift */; };
+		D34552BF210B56DB009CF6EB /* HexString+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795E20F79886005A723E /* HexString+Array.swift */; };
+		D34552C0210B56E2009CF6EB /* Array+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368797020F79F28005A723E /* Array+Sequence.swift */; };
+		D34552C1210B56E5009CF6EB /* MIDIEndpointRef+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368797220F79FB5005A723E /* MIDIEndpointRef+String.swift */; };
+		D34552C3210B698C009CF6EB /* ParameterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34552C2210B698C009CF6EB /* ParameterType.swift */; };
+		D34552C5210B7740009CF6EB /* DeepDecription+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34552C4210B7740009CF6EB /* DeepDecription+Any.swift */; };
+		D34552C6210B7770009CF6EB /* DeepDecription+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34552C4210B7740009CF6EB /* DeepDecription+Any.swift */; };
+		D34552C7210C93E1009CF6EB /* ParameterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34552C2210B698C009CF6EB /* ParameterType.swift */; };
 		D368794B20F78891005A723E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368794A20F78891005A723E /* main.swift */; };
 		D368795320F78BBD005A723E /* MIDIEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795220F78BBD005A723E /* MIDIEngine.swift */; };
 		D368795520F78CF5005A723E /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795420F78CF5005A723E /* MessageHandler.swift */; };
@@ -17,9 +31,9 @@
 		D368795F20F79886005A723E /* HexString+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368795E20F79886005A723E /* HexString+Array.swift */; };
 		D368796120F79A17005A723E /* Units+TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368796020F79A17005A723E /* Units+TimeInterval.swift */; };
 		D368796320F79AAA005A723E /* TuningData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368796220F79AAA005A723E /* TuningData.swift */; };
-		D368796B20F79C35005A723E /* SysexCodingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368796A20F79C35005A723E /* SysexCodingTest.swift */; };
 		D368797120F79F28005A723E /* Array+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368797020F79F28005A723E /* Array+Sequence.swift */; };
 		D368797320F79FB5005A723E /* MIDIEndpointRef+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368797220F79FB5005A723E /* MIDIEndpointRef+String.swift */; };
+		D3BA678B210B31760033D76D /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA678A210B31760033D76D /* GlobalSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +49,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D34552AF210B5594009CF6EB /* NeutronTuningDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeutronTuningDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34552B3210B5594009CF6EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34552B8210B5677009CF6EB /* GlobalSettingsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalSettingsTest.swift; path = SysexCodingTest/GlobalSettingsTest.swift; sourceTree = SOURCE_ROOT; };
+		D34552C2210B698C009CF6EB /* ParameterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterType.swift; sourceTree = "<group>"; };
+		D34552C4210B7740009CF6EB /* DeepDecription+Any.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeepDecription+Any.swift"; sourceTree = "<group>"; };
 		D368794720F78891005A723E /* NeutronTuningData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NeutronTuningData; sourceTree = BUILT_PRODUCTS_DIR; };
 		D368794A20F78891005A723E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D368795220F78BBD005A723E /* MIDIEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIEngine.swift; sourceTree = "<group>"; };
@@ -46,22 +65,21 @@
 		D368795E20F79886005A723E /* HexString+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HexString+Array.swift"; sourceTree = "<group>"; };
 		D368796020F79A17005A723E /* Units+TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Units+TimeInterval.swift"; sourceTree = "<group>"; };
 		D368796220F79AAA005A723E /* TuningData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuningData.swift; sourceTree = "<group>"; };
-		D368796820F79C35005A723E /* SysexCodingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SysexCodingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D368796A20F79C35005A723E /* SysexCodingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysexCodingTest.swift; sourceTree = "<group>"; };
-		D368796C20F79C35005A723E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D368797020F79F28005A723E /* Array+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sequence.swift"; sourceTree = "<group>"; };
 		D368797220F79FB5005A723E /* MIDIEndpointRef+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MIDIEndpointRef+String.swift"; sourceTree = "<group>"; };
+		D3BA678A210B31760033D76D /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D368794420F78891005A723E /* Frameworks */ = {
+		D34552AC210B5594009CF6EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D368796520F79C35005A723E /* Frameworks */ = {
+		D368794420F78891005A723E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,11 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D34552B0210B5594009CF6EB /* NeutronTuningDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				D368796A20F79C35005A723E /* SysexCodingTest.swift */,
+				D34552B8210B5677009CF6EB /* GlobalSettingsTest.swift */,
+				D34552B3210B5594009CF6EB /* Info.plist */,
+			);
+			path = NeutronTuningDataTests;
+			sourceTree = "<group>";
+		};
 		D368793E20F78891005A723E = {
 			isa = PBXGroup;
 			children = (
 				D368794920F78891005A723E /* NeutronTuningData */,
-				D368796920F79C35005A723E /* SysexCodingTest */,
+				D34552B0210B5594009CF6EB /* NeutronTuningDataTests */,
 				D368794820F78891005A723E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D368794720F78891005A723E /* NeutronTuningData */,
-				D368796820F79C35005A723E /* SysexCodingTest.xctest */,
+				D34552AF210B5594009CF6EB /* NeutronTuningDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +129,8 @@
 				D368795A20F79126005A723E /* MessageType.swift */,
 				D368795C20F7955B005A723E /* SysexParser.swift */,
 				D368796220F79AAA005A723E /* TuningData.swift */,
+				D3BA678A210B31760033D76D /* GlobalSettings.swift */,
+				D34552C2210B698C009CF6EB /* ParameterType.swift */,
 			);
 			path = NeutronTuningData;
 			sourceTree = "<group>";
@@ -112,22 +142,31 @@
 				D368796020F79A17005A723E /* Units+TimeInterval.swift */,
 				D368797020F79F28005A723E /* Array+Sequence.swift */,
 				D368797220F79FB5005A723E /* MIDIEndpointRef+String.swift */,
+				D34552C4210B7740009CF6EB /* DeepDecription+Any.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D368796920F79C35005A723E /* SysexCodingTest */ = {
-			isa = PBXGroup;
-			children = (
-				D368796A20F79C35005A723E /* SysexCodingTest.swift */,
-				D368796C20F79C35005A723E /* Info.plist */,
-			);
-			path = SysexCodingTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D34552AE210B5594009CF6EB /* NeutronTuningDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34552B4210B5594009CF6EB /* Build configuration list for PBXNativeTarget "NeutronTuningDataTests" */;
+			buildPhases = (
+				D34552AB210B5594009CF6EB /* Sources */,
+				D34552AC210B5594009CF6EB /* Frameworks */,
+				D34552AD210B5594009CF6EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeutronTuningDataTests;
+			productName = NeutronTuningDataTests;
+			productReference = D34552AF210B5594009CF6EB /* NeutronTuningDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D368794620F78891005A723E /* NeutronTuningData */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D368794E20F78891005A723E /* Build configuration list for PBXNativeTarget "NeutronTuningData" */;
@@ -145,37 +184,20 @@
 			productReference = D368794720F78891005A723E /* NeutronTuningData */;
 			productType = "com.apple.product-type.tool";
 		};
-		D368796720F79C35005A723E /* SysexCodingTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D368796D20F79C35005A723E /* Build configuration list for PBXNativeTarget "SysexCodingTest" */;
-			buildPhases = (
-				D368796420F79C35005A723E /* Sources */,
-				D368796520F79C35005A723E /* Frameworks */,
-				D368796620F79C35005A723E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SysexCodingTest;
-			productName = SysexCodingTest;
-			productReference = D368796820F79C35005A723E /* SysexCodingTest.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D368793F20F78891005A723E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Peter Bloxidge";
 				TargetAttributes = {
-					D368794620F78891005A723E = {
-						CreatedOnToolsVersion = 9.3;
+					D34552AE210B5594009CF6EB = {
+						CreatedOnToolsVersion = 10.0;
 					};
-					D368796720F79C35005A723E = {
+					D368794620F78891005A723E = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -193,13 +215,13 @@
 			projectRoot = "";
 			targets = (
 				D368794620F78891005A723E /* NeutronTuningData */,
-				D368796720F79C35005A723E /* SysexCodingTest */,
+				D34552AE210B5594009CF6EB /* NeutronTuningDataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D368796620F79C35005A723E /* Resources */ = {
+		D34552AD210B5594009CF6EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,11 +231,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D34552AB210B5594009CF6EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34552B9210B5677009CF6EB /* GlobalSettingsTest.swift in Sources */,
+				D34552BA210B56AC009CF6EB /* Message.swift in Sources */,
+				D34552B7210B5607009CF6EB /* SysexCodingTest.swift in Sources */,
+				D34552BB210B56B0009CF6EB /* MessageType.swift in Sources */,
+				D34552C3210B698C009CF6EB /* ParameterType.swift in Sources */,
+				D34552C6210B7770009CF6EB /* DeepDecription+Any.swift in Sources */,
+				D34552C0210B56E2009CF6EB /* Array+Sequence.swift in Sources */,
+				D34552BF210B56DB009CF6EB /* HexString+Array.swift in Sources */,
+				D34552BE210B56D3009CF6EB /* SysexParser.swift in Sources */,
+				D34552BD210B56BE009CF6EB /* NeutronMessage.swift in Sources */,
+				D34552BC210B56B7009CF6EB /* GlobalSettings.swift in Sources */,
+				D34552C1210B56E5009CF6EB /* MIDIEndpointRef+String.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D368794320F78891005A723E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BA678B210B31760033D76D /* GlobalSettings.swift in Sources */,
 				D368797120F79F28005A723E /* Array+Sequence.swift in Sources */,
+				D34552C7210C93E1009CF6EB /* ParameterType.swift in Sources */,
 				D368796320F79AAA005A723E /* TuningData.swift in Sources */,
 				D368795320F78BBD005A723E /* MIDIEngine.swift in Sources */,
 				D368795520F78CF5005A723E /* MessageHandler.swift in Sources */,
@@ -223,22 +266,56 @@
 				D368795D20F7955B005A723E /* SysexParser.swift in Sources */,
 				D368795F20F79886005A723E /* HexString+Array.swift in Sources */,
 				D368796120F79A17005A723E /* Units+TimeInterval.swift in Sources */,
+				D34552C5210B7740009CF6EB /* DeepDecription+Any.swift in Sources */,
 				D368797320F79FB5005A723E /* MIDIEndpointRef+String.swift in Sources */,
 				D368795720F78E7C005A723E /* NeutronMessage.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D368796420F79C35005A723E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D368796B20F79C35005A723E /* SysexCodingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D34552B5210B5594009CF6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KZ84TRLT54;
+				INFOPLIST_FILE = NeutronTuningDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.music-group.NeutronTuningDataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D34552B6210B5594009CF6EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KZ84TRLT54;
+				INFOPLIST_FILE = NeutronTuningDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.music-group.NeutronTuningDataTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		D368794C20F78891005A723E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,45 +449,18 @@
 			};
 			name = Release;
 		};
-		D368796E20F79C35005A723E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = KZ84TRLT54;
-				INFOPLIST_FILE = SysexCodingTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.music-group.SysexCodingTest";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		D368796F20F79C35005A723E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = KZ84TRLT54;
-				INFOPLIST_FILE = SysexCodingTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.music-group.SysexCodingTest";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D34552B4210B5594009CF6EB /* Build configuration list for PBXNativeTarget "NeutronTuningDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34552B5210B5594009CF6EB /* Debug */,
+				D34552B6210B5594009CF6EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D368794220F78891005A723E /* Build configuration list for PBXProject "NeutronTuningData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -425,15 +475,6 @@
 			buildConfigurations = (
 				D368794F20F78891005A723E /* Debug */,
 				D368795020F78891005A723E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D368796D20F79C35005A723E /* Build configuration list for PBXNativeTarget "SysexCodingTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D368796E20F79C35005A723E /* Debug */,
-				D368796F20F79C35005A723E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

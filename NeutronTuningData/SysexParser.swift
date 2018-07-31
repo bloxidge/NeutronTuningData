@@ -38,8 +38,8 @@ extension Array where Element == UInt8 {
         }
         
         let data = self.split(every: 8)
-            .map { (byteGroup) -> [UInt8] in
-                var bytes: [UInt8] = byteGroup
+            .map { bytes -> [UInt8] in
+                var bytes = bytes
                 let overflowByte = bytes.removeLast()
                 for (i, byte) in bytes.enumerated() {
                     let msb = (Int(overflowByte) & (1 << i)) << (7 - i)
@@ -52,4 +52,18 @@ extension Array where Element == UInt8 {
         
         return data
     }
+    
+    
+    func toUInt16Array() -> [UInt16] {
+        guard self.count % 2 == 0 else {
+            fatalError("Odd number of UInt8 elements.")
+        }
+        return self.split(every: 2).map { pack(msb: $0.last!, lsb: $0.first!) }
+    }
 }
+
+func pack(msb: UInt8, lsb: UInt8) -> UInt16 {
+    return (UInt16(msb) << 8) | UInt16(lsb);
+}
+
+
