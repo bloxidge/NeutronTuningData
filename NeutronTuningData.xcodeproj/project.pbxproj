@@ -33,6 +33,8 @@
 		D368796320F79AAA005A723E /* TuningData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368796220F79AAA005A723E /* TuningData.swift */; };
 		D368797120F79F28005A723E /* Array+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368797020F79F28005A723E /* Array+Sequence.swift */; };
 		D368797320F79FB5005A723E /* MIDIEndpointRef+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D368797220F79FB5005A723E /* MIDIEndpointRef+String.swift */; };
+		D376D95B21188CB2000796F5 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376D95A21188CB2000796F5 /* Console.swift */; };
+		D376D95D21189585000796F5 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = D376D95C21189585000796F5 /* Options.swift */; };
 		D3BA678B210B31760033D76D /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BA678A210B31760033D76D /* GlobalSettings.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		D368796A20F79C35005A723E /* SysexCodingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysexCodingTest.swift; sourceTree = "<group>"; };
 		D368797020F79F28005A723E /* Array+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sequence.swift"; sourceTree = "<group>"; };
 		D368797220F79FB5005A723E /* MIDIEndpointRef+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MIDIEndpointRef+String.swift"; sourceTree = "<group>"; };
+		D376D95A21188CB2000796F5 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		D376D95C21189585000796F5 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		D3BA678A210B31760033D76D /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,7 @@
 		D368794920F78891005A723E /* NeutronTuningData */ = {
 			isa = PBXGroup;
 			children = (
+				D376D95921188BAF000796F5 /* Supporting Files */,
 				D368795120F788A3005A723E /* Extensions */,
 				D368794A20F78891005A723E /* main.swift */,
 				D368795220F78BBD005A723E /* MIDIEngine.swift */,
@@ -145,6 +150,15 @@
 				D34552C4210B7740009CF6EB /* DeepDecription+Any.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D376D95921188BAF000796F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D376D95A21188CB2000796F5 /* Console.swift */,
+				D376D95C21189585000796F5 /* Options.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,7 @@
 				D368797120F79F28005A723E /* Array+Sequence.swift in Sources */,
 				D34552C7210C93E1009CF6EB /* ParameterType.swift in Sources */,
 				D368796320F79AAA005A723E /* TuningData.swift in Sources */,
+				D376D95D21189585000796F5 /* Options.swift in Sources */,
 				D368795320F78BBD005A723E /* MIDIEngine.swift in Sources */,
 				D368795520F78CF5005A723E /* MessageHandler.swift in Sources */,
 				D368795920F79092005A723E /* Message.swift in Sources */,
@@ -265,6 +280,7 @@
 				D368794B20F78891005A723E /* main.swift in Sources */,
 				D368795D20F7955B005A723E /* SysexParser.swift in Sources */,
 				D368795F20F79886005A723E /* HexString+Array.swift in Sources */,
+				D376D95B21188CB2000796F5 /* Console.swift in Sources */,
 				D368796120F79A17005A723E /* Units+TimeInterval.swift in Sources */,
 				D34552C5210B7740009CF6EB /* DeepDecription+Any.swift in Sources */,
 				D368797320F79FB5005A723E /* MIDIEndpointRef+String.swift in Sources */,

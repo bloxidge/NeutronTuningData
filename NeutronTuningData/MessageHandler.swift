@@ -66,9 +66,13 @@ class MessageHandler: MessageHandlerDelegate {
             
             switch neutronMessage.sysexCommand {
             case .globalSettingResponse:
-                parseGlobalSettingsResponse(neutronMessage)
+                if options.contains(.settings) {
+                    parseGlobalSettingsResponse(neutronMessage)
+                }
             case .tuningResponse:
-                parseTuningResponse(neutronMessage)
+                if options.contains(.tuning) {
+                    parseTuningResponse(neutronMessage)
+                }
             default:
                 break
             }
