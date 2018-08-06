@@ -12,6 +12,7 @@ enum SysexCommand: UInt8 {
     case globalSettingRequest  = 0x05
     case globalSettingResponse = 0x06
     case parameterSet          = 0x0A
+    case parameterSetResponse  = 0x5A
     case restoreGlobalSettings = 0x0B
     case calibrationMode       = 0x10
     case tuningRequest         = 0x71
