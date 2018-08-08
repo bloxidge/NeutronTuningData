@@ -26,8 +26,7 @@ struct GlobalSettings {
         .LFO_KEY_SYNC      : false,
         .LFO_ONE_SHOT      : 0,
         .LFO_DEPTH         : 0,
-        .LFO_KEY_TRACK     : false,
-//        .KEY_TRACK_ROOT    : 24,
+        .LFO_KEY_TRACK     : 0,
         .LFO_MIDI_SYNC     : false,
 //        .LFO_MOD_SRC       : 0,
         .LFO_SHAPE_ORDER   : [0, 1, 2, 3, 4],
@@ -53,7 +52,9 @@ struct GlobalSettings {
         for parameter in parameters {
             let descriptor = parameter.key.layoutDescription
             let bitMask = UInt16((1 << descriptor.size) - 1)
-            let rawValue = (blocks[descriptor.memoryBlock] >> descriptor.offset) & bitMask
+            var rawValue = (blocks[descriptor.memoryBlock] >> descriptor.offset) & bitMask
+            
+            rawValue = parameter.key.correction(rawValue)
             
             switch parameters[parameter.key] {
             case is Bool:

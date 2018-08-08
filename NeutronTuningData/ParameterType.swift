@@ -44,39 +44,37 @@ enum ParameterType: String {
     case LFO_ONE_SHOT
     
     static var all: [ParameterType] = [
-        .OSC1_RANGE,
-        .OSC2_RANGE,
-        .OSC_SYNC,
-        .LFO_KEY_SYNC,
-        .VCF_KEY_TRACK,
-        .PARAPHONIC_MODE,
-        .VCF_MODE,
-        .ASSIGN_OUT,
         .OSC1_BLEND_MODE,
-        .OSC2_BLEND_MODE,
-        .LFO_BLEND_MODE,
-        .ENV_RETRIGGER,
         .OSC1_TUNE_POT,
+        .OSC1_RANGE,
+        .OSC2_BLEND_MODE,
         .OSC2_TUNE_POT,
-        .POLYCHAIN_MODE,
-        .DEVICE_ID,
+        .OSC2_RANGE,
+        .OSC_KEY_SPLIT,
+        .OSC_SYNC,
+        .PARAPHONIC_MODE,
+        .LFO_BLEND_MODE,
+        .LFO_KEY_SYNC,
+        .LFO_ONE_SHOT,
+        .LFO_DEPTH,
+        .LFO_KEY_TRACK,
+        .LFO_MIDI_SYNC,
+//        .LFO_MOD_SRC,
+        .LFO_SHAPE_ORDER,
+        .LFO_PHASE_OFFSET,
+        .VCF_KEY_TRACK,
+        .VCF_MOD_SRC,
+        .VCF_MODE,
         .MIDI_CHANNEL,
         .DISABLE_MIDI_DIPS,
+        .POLYCHAIN_MODE,
         .NOTE_PRIORITY,
         .PITCH_BEND_RANGE,
-        .OSC1_AUTOGLIDE,
-        .OSC2_AUTOGLIDE,
-        .LFO_SHAPE_ORDER,
-        .LFO_MIDI_SYNC,
-        .LFO_KEY_TRACK,
-        .LFO_DEPTH,
-        .OSC_KEY_SPLIT,
-        .LFO_PHASE_OFFSET,
+        .ENV_RETRIGGER,
+        .ASSIGN_OUT,
         .KEY_RANGE_MUTE,
         .KEY_RANGE_MIN,
         .KEY_RANGE_MAX,
-        .VCF_MOD_SRC,
-        .LFO_ONE_SHOT
     ]
 }
 
@@ -124,6 +122,21 @@ extension ParameterType {
         case .KEY_RANGE_MAX:     return (memoryBlock: 6, offset: 6, size: 6)
         case .VCF_MOD_SRC:       return (memoryBlock: 6, offset: 12, size: 2)
         case .LFO_ONE_SHOT:      return (memoryBlock: 6, offset: 14, size: 2)
+        }
+    }
+    
+    func correction(_ value: UInt16) -> UInt16 {
+        switch self {
+        case .OSC_KEY_SPLIT:
+            return value == 0 ? 0 : (value + 23)
+        case .LFO_KEY_TRACK:
+            return value == 0 ? 0 : (value + 11)
+        case .KEY_RANGE_MIN:
+            return value + 24
+        case .KEY_RANGE_MAX:
+            return 96 - value
+        default:
+            return value
         }
     }
 }
