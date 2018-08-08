@@ -69,7 +69,12 @@ struct GlobalSettings {
                 parameters[parameter.key] = rawValue
             }
         }
-
+    }
+    
+    func printParameters() {
+        for (key, value) in parameters.sorted(by: { ParameterType.all.index(of: $0.key)! < ParameterType.all.index(of: $1.key)! }) {
+            print("\(key) : \(value)")
+        }
     }
 }
 

@@ -83,7 +83,7 @@ class MessageHandler: MessageHandlerDelegate {
         let globalSettingsStart = NeutronMessage.header.count + 3
         let globalSettings = GlobalSettings(packed: Array(message.data[globalSettingsStart..<message.data.count - 1]).sysexToData)
         print()
-        print(deepDescription(globalSettings.parameters))
+        globalSettings.printParameters()
     }
     
     func parseTuningResponse(_ message: NeutronMessage) {
