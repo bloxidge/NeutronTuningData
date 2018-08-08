@@ -129,8 +129,6 @@ extension ParameterType {
         switch self {
         case .OSC_KEY_SPLIT:
             return value == 0 ? 0 : (value + 23)
-        case .LFO_KEY_TRACK:
-            return value == 0 ? 0 : (value + 11)
         case .KEY_RANGE_MIN:
             return value + 24
         case .KEY_RANGE_MAX:
