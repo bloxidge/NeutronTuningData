@@ -34,7 +34,6 @@ class MessageHandler: MessageHandlerDelegate {
                 // It's possible a SysEx message gets split and the end byte comes in on its own...
                 guard byte != sysexEndByte else {
                     tempBytes.append(byte)
-//                    print("From \(source.displayName):\t\(tempMessageType)\t\(tempBytes.hexDescription)")
                     handleMessage(Message(type: tempMessageType, data: tempBytes))
                     return
                 }
@@ -52,7 +51,6 @@ class MessageHandler: MessageHandlerDelegate {
             
             // Create message when byte count reaches expected size for message type
             if tempBytes.count == tempMessageType.size || byte == sysexEndByte {
-//                print("From \(source.displayName):\t\(tempMessageType)\t\(tempBytes.hexDescription)")
                 handleMessage(Message(type: tempMessageType, data: tempBytes))
             }
         }

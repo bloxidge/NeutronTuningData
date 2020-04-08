@@ -28,7 +28,6 @@ enum OptionType: String {
             print("")
             usage()
             exit(-1)
-            return nil
         }
         self = option
     }
